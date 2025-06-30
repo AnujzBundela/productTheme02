@@ -91,41 +91,41 @@
 
   <!-- header start -->
 
-      <!-- banner start -->
-    <section id="headBelowContent" class="Banner">
-      <div class="comtainer-fluid text-white">
-        <div id="ca1" class="owl-carousel owl-theme">
-          <div class="item item1">
-            <div class="container">
-              <div class="bannerCard animate__animated animate__delay-1s">
-                <h1 class="display-3 h-banner-title">Company Title</h1>
-                <a class="fillBtn h-banner-mobile" href="#">Call Now</a>
-                <a class="WhiteBtn" href="contact.html#contact_Form">Make an enquiry</a>
-              </div>
+  <!-- banner start -->
+  <section id="headBelowContent" class="Banner">
+    <div class="comtainer-fluid text-white">
+      <div id="ca1" class="owl-carousel owl-theme">
+        <div class="item item1">
+          <div class="container">
+            <div class="bannerCard animate__animated animate__delay-1s">
+              <h1 class="display-3 h-banner-title">Company Title</h1>
+              <a class="fillBtn h-banner-mobile" href="#">Call Now</a>
+              <a class="WhiteBtn" href="contact.html#contact_Form">Make an enquiry</a>
             </div>
           </div>
-          <div class="item item2">
-            <div class="container">
-              <div class="bannerCard animate__animated animate__delay-1s">
-                <h1 class="display-3 h-banner-title">Company Title</h1>
-                <a class="fillBtn h-banner-mobile" href="#">Call Now</a>
-                <a class="WhiteBtn" href="contact.html#contact_Form">Make an enquiry</a>
-              </div>
+        </div>
+        <div class="item item2">
+          <div class="container">
+            <div class="bannerCard animate__animated animate__delay-1s">
+              <h1 class="display-3 h-banner-title">Company Title</h1>
+              <a class="fillBtn h-banner-mobile" href="#">Call Now</a>
+              <a class="WhiteBtn" href="contact.html#contact_Form">Make an enquiry</a>
             </div>
           </div>
-          <div class="item item3">
-            <div class="container">
-              <div class="bannerCard animate__animated animate__delay-1s">
-                <h1 class="display-3 h-banner-title">Company Title</h1>
-                <a class="fillBtn h-banner-mobile" href="#">Call Now</a>
-                <a class="WhiteBtn" href="contact.html#contact_Form">Make an enquiry</a>
-              </div>
+        </div>
+        <div class="item item3">
+          <div class="container">
+            <div class="bannerCard animate__animated animate__delay-1s">
+              <h1 class="display-3 h-banner-title">Company Title</h1>
+              <a class="fillBtn h-banner-mobile" href="#">Call Now</a>
+              <a class="WhiteBtn" href="contact.html#contact_Form">Make an enquiry</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- banner start End-->
+    </div>
+  </section>
+  <!-- banner start End-->
 
 
   <!-- our story section start -->
@@ -133,7 +133,7 @@
     <div class="container">
       <div class="StoryCard">
         <div class="row">
-           <div class="col-lg-7 col-xl-6">
+          <div class="col-lg-7 col-xl-6">
             <div class="storyText">
               <h2 class="secH" id="h-container-title">Our Story</h2>
               <p id="h_container_description">
@@ -421,42 +421,42 @@
         document.getElementById("logo").src = data.logo;
 
         // Destroy existing Owl if present
-    const owl = $('#ca1');
-    if (owl.hasClass('owl-loaded')) {
-      owl.trigger('destroy.owl.carousel').removeClass('owl-loaded').find('.owl-stage-outer').children().unwrap();
-    }
+        const owl = $('#ca1');
+        if (owl.hasClass('owl-loaded')) {
+          owl.trigger('destroy.owl.carousel').removeClass('owl-loaded').find('.owl-stage-outer').children().unwrap();
+        }
 
         // Small delay to ensure destruction is complete
         setTimeout(() => {
           // Initialize Owl
 
-$("#ca1").owlCarousel({
-  loop: true,
-  margin: 0,
-  nav: true,
-  dots: false,
-  animateOut: "fadeOut",
-  navText: [
-    `<i class="fa-solid fa-angle-left"></i>`,
-    `<i class="fa-solid fa-angle-right"></i>`
-  ],
-  responsive: {
-    0: { items: 1 },
-    600: { items: 1 },
-    1000: { items: 1 }
-  }
-}).on("initialized.owl.carousel refreshed.owl.carousel resized.owl.carousel", function () {
-  $(".owl-nav").addClass("container");
-});
+          $("#ca1").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            animateOut: "fadeOut",
+            navText: [
+              `<i class="fa-solid fa-angle-left"></i>`,
+              `<i class="fa-solid fa-angle-right"></i>`
+            ],
+            responsive: {
+              0: { items: 1 },
+              600: { items: 1 },
+              1000: { items: 1 }
+            }
+          }).on("initialized.owl.carousel refreshed.owl.carousel resized.owl.carousel", function () {
+            $(".owl-nav").addClass("container");
+          });
 
-  const element = document.querySelector("#ca1 .owl-nav");
-  if (element) {
-    element.classList.add("container");
-  }
-          
-}, 100); // wait 100ms
+          const element = document.querySelector("#ca1 .owl-nav");
+          if (element) {
+            element.classList.add("container");
+          }
 
-     
+        }, 100); // wait 100ms
+
+
 
 
         document.getElementById("h-container-image").src = data.h_container_image;
