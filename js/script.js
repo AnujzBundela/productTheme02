@@ -164,7 +164,7 @@ fetch("https://script.google.com/macros/s/AKfycbzkGFsr2_TAL6aX7riCLZxjnHm8UfRUKg
 
 
     const callLink = document.querySelector(".Call-fab-container a");
-        if (callLink && phone) {
+        if (callLink) {
           callLink.href = data.call_number;
         }
 
