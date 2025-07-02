@@ -19,8 +19,8 @@ document.getElementById("footer").innerHTML = `
                     </g>
                   </svg>
                   <span> TF-A1-22, Akshar Pavilion Mall,
-Near Priya Cinema,Vasna Bhyali
-Main Road, Vadodara,391410</span>
+                         Near Priya Cinema,Vasna Bhyali
+                         Main Road, Vadodara,391410</span>
                 </a>
               </li>
               <li>
