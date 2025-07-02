@@ -161,6 +161,15 @@ fetch("https://script.google.com/macros/s/AKfycbzkGFsr2_TAL6aX7riCLZxjnHm8UfRUKg
       clearTimeout(window.resizeTimer);
       window.resizeTimer = setTimeout(updateWhatsAppHref, 200);
     });
+
+
+    const callLink = document.querySelector(".Call-fab-container a");
+        if (callLink && phone) {
+          callLink.href = data.call_number;
+        }
+
+
+
   })
   .catch(error => {
     console.error("Error fetching footer data:", error);
