@@ -349,7 +349,6 @@
 
   <script>
 
-
     $(document).ready(function () {
       // Initialize Owl Carousel
       $("#ca2").owlCarousel({
@@ -381,9 +380,6 @@
       }, 500);
     });
   </script>
-
-
-
 
   <script>
     document.getElementById("loader").style.display = "flex";
@@ -426,7 +422,6 @@
           owl.trigger('destroy.owl.carousel').removeClass('owl-loaded').find('.owl-stage-outer').children().unwrap();
         }
 
-        // Small delay to ensure destruction is complete
         setTimeout(() => {
           // Initialize Owl
 
@@ -448,16 +443,11 @@
           }).on("initialized.owl.carousel refreshed.owl.carousel resized.owl.carousel", function () {
             $(".owl-nav").addClass("container");
           });
-
           const element = document.querySelector("#ca1 .owl-nav");
           if (element) {
             element.classList.add("container");
           }
-
-        }, 100); // wait 100ms
-
-
-
+        }, 100);
 
         document.getElementById("h-container-image").src = data.h_container_image;
         document.getElementById("h-container-title").textContent = data.h_container_title;
@@ -473,7 +463,6 @@
         document.getElementById("h-product-title3").textContent = data.h_product_title3;
         document.getElementById("h-product-content3").textContent = data.h_product_content3;
         document.getElementById("logo").src = data.logo;
-        // document.getElementById("fevicon-image").src = data.fevicon_image;
         document.getElementById("product1").innerHTML = data.product1;
         document.getElementById("product2").innerHTML = data.product2;
         document.getElementById("product3").innerHTML = data.product3;
@@ -496,10 +485,10 @@
           data.h_gallery_image4,
           data.h_gallery_image5, // Add more if needed
           data.h_gallery_image6
-        ].filter(Boolean); // Removes any undefined or empty values
+        ].filter(Boolean);
 
         const ca2 = document.getElementById("ca2");
-        ca2.innerHTML = ""; // Clear existing content
+        ca2.innerHTML = "";
 
         // Add each image dynamically
         imageUrls.forEach((imgUrl, index) => {

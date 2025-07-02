@@ -167,9 +167,6 @@ fetch("https://script.google.com/macros/s/AKfycbzkGFsr2_TAL6aX7riCLZxjnHm8UfRUKg
         if (callLink) {
           callLink.href = data.call_number;
         }
-
-
-
   })
   .catch(error => {
     console.error("Error fetching footer data:", error);
