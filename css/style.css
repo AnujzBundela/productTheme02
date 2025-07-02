@@ -83,7 +83,7 @@ img {
 }
 
 .wrapheder{
-  height: 72.38px;
+  height: 92.38px;
 }
 .wrapheder.HomePage0{
   height: unset;
@@ -154,7 +154,7 @@ img {
   display: inline-block;
   margin-right: 45px;
   padding: 0 ;
-  width: 120px;
+  width: 98px;
   position: relative;
 }
 
@@ -687,7 +687,7 @@ color: var(--hover-secondary);
   background-color: #ea2c59;
 }
 .footer .social-icons .whatsapp {
-  background-color: #25d366;
+  background-color: #e91118;
 }
 .f-bottom {
   background: var(--secondary-color);
@@ -1173,3 +1173,4 @@ transition: 3ms ease-in-out;
       0%   { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    

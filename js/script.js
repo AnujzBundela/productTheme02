@@ -37,11 +37,11 @@ Main Road, Vadodara,391410</span>
               </li>
             </ul>
             <div class="social-icons mt-3">
-              <a target="_blank" class="facebook" href="https://www.linkedin.com/">
-                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <a target="_blank" class="facebook" href="footer_icon_1" id="footer-icon-1">
+                <i class="fa-brands fa-facebook"></i>
               </a>
-              <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=917016964352">
-                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="footer_icon_2" id="footer-icon-2">
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
           </div>
@@ -125,7 +125,7 @@ fetch("https://script.google.com/macros/s/AKfycbzkGFsr2_TAL6aX7riCLZxjnHm8UfRUKg
 
     // Update footer content
     document.getElementById("footer_logo").src = data.footer_logo;
-        document.getElementById("footer_contact").innerHTML = data.footer_contact;
+    document.getElementById("footer_contact").innerHTML = data.footer_contact;
 
     // document.querySelector("#footer_contact span").innerHTML = data.footer_contact;
     document.getElementById("footer_contact").href = `tel:${data.footer_contact}`;
@@ -134,6 +134,9 @@ fetch("https://script.google.com/macros/s/AKfycbzkGFsr2_TAL6aX7riCLZxjnHm8UfRUKg
     document.querySelector("#footer_address span").innerHTML = data.footer_address;
     document.getElementById("footer_address").href = data.footer_address_link || "#";
     document.getElementById("footer_copyright").innerHTML = data["footer-copyright"];
+    document.getElementById("footer-icon-1").href = data.footer_icon_1;
+    document.getElementById("footer-icon-2").href = data.footer_icon_2;
+
 
     // Set favicon dynamically
     const link = document.createElement("link");
